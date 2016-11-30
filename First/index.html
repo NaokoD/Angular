@@ -7,21 +7,22 @@
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <base href="/">
+    <!-- <base href="/"> -->
 </head>
 
 <body ng-app="myApp">
     <nav>
         <li>
             <ul><a href="/">Accueil</a></ul>
-            <ul><a href="/comptes">Listes Comptes</a></ul>
-            <li>
-                <ul><a href="/comptes/1">User's Account 1</a></ul>
-                <ul><a href="/comptes/2">User's Account 2</a></ul>
-                <ul><a href="/comptes/3">User's Account 3</a></ul>
-                <ul><a href="/comptes/4">User's Account 4</a></ul>
-            </li>
-            <ul><a href="/operations">Listes Operation</a></ul>
+            <ul><a href="/#/comptes">Listes Comptes</a>
+                <li>
+                    <ul><a href="/#/comptes/1">User's Account 1</a></ul>
+                    <ul><a href="/#/comptes/2">User's Account 2</a></ul>
+                    <ul><a href="/#/comptes/3">User's Account 3</a></ul>
+                    <ul><a href="/#/comptes/4">User's Account 4</a></ul>
+                </li>
+            </ul>
+            <ul><a href="/#/operations">Listes Operation</a></ul>
         </li>
     </nav>
     <div ng-view>
@@ -31,6 +32,9 @@
     <script src="js/controllers/compteCtrl.js"></script>
     <script src="js/factories/compteFactory.js"></script>
     <script src="js/services/compteService.js"></script>
+    <script src="js/controllers/operationCtrl.js"></script>
+    <script src="js/factories/operationFactory.js"></script>
+    <script src="js/services/operationService.js"></script>
     <script src="routes.js"></script>
 </body>
 

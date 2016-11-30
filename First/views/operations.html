@@ -1,0 +1,16 @@
+<div>
+  <table>
+    <thead>
+      <th>Id</th>
+      <th>Libelle</th>
+      <th>Date</th>
+      <th>Montant</th>
+    </thead>
+    <tr ng-repeat='operation in operations'>
+      <td>{{operation.id}}</td>
+      <td>{{operation.libelle}}</td>
+      <td>{{operation.date}}</td>
+      <td>{{operation.montant}}</td>
+    </tr>
+  </table>
+</div>

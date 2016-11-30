@@ -1,7 +1,7 @@
 myApp.config(routesConfig);
 
 function routesConfig($routeProvider, $locationProvider) {
-  $locationProvider.html5Mode(true);
+  // $locationProvider.html5Mode(true);
   $routeProvider
     // .when('/comptes', {
     //   templateUrl: 'views/comptes.html',
@@ -11,7 +11,7 @@ function routesConfig($routeProvider, $locationProvider) {
       templateUrl: 'views/comptes.html',
       controller : 'compteCtrl'
     })
-    .when('/operations',{
+    .when('/comptes/:id/operations/:compteid',{
     templateUrl: 'views/operations.html',
     controller : 'operationCtrl'
   })
